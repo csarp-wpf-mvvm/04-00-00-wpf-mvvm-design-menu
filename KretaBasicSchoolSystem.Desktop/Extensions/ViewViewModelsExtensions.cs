@@ -46,7 +46,7 @@ namespace KretaDesktop.Extensions
             services.AddSingleton<StudentViewModel>();
             services.AddSingleton<StudentView>(s => new StudentView()
             {
-                DataContext = s.GetRequiredService<StudentView>()
+                DataContext = s.GetRequiredService<StudentViewModel>()
             });
 
         }
